@@ -1,0 +1,19 @@
+.profile {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(224, 178, 160);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.friends {
+  background-color: rgb(255, 255, 255);
+}
+
+.transactions {
+  background-color: rgb(255, 255, 255);
+}
