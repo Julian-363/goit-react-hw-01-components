@@ -13,7 +13,7 @@ function Transaction({ transactions }) {
 }
 
 Transaction.propTypes = {
-  transactions: PropTypes.array,
+  transactions: PropTypes.array.isRequired,
 };
 
 export default Transaction;

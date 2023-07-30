@@ -6,7 +6,7 @@ function ContainerProfile({ children }) {
 }
 
 ContainerProfile.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 export default ContainerProfile;

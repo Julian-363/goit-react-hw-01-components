@@ -22,10 +22,10 @@ function Profile({ avatar, username, tag, location, stats }) {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string,
+  username: PropTypes.string.isRequired,
   tag: PropTypes.string,
   location: PropTypes.string,
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.object,
 };
 

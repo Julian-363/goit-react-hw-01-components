@@ -22,7 +22,13 @@ function Friends({ friends }) {
 }
 
 Friends.propTypes = {
-  friends: PropTypes.array,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default Friends;

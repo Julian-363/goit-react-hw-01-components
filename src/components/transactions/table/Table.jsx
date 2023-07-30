@@ -35,7 +35,7 @@ function Table({ transactions }) {
 }
 
 Table.propTypes = {
-  transactions: PropTypes.array,
+  transactions: PropTypes.array.isRequired,
 };
 
 export default Table;

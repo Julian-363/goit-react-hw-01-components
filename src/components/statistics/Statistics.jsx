@@ -8,9 +8,11 @@ function Statistics({ stats, title }) {
   return (
     <ContainerProfile type="container statistics">
       <section className="statistics__section">
-        <div className="statistics__title">
-          <h2 className="title">{title}</h2>
-        </div>
+        {title && (
+          <div className="statistics__title">
+            <h2 className="title">{title}</h2>
+          </div>
+        )}
 
         <ul className="stats-list">
           {stats.map(stat => (
@@ -27,8 +29,8 @@ function Statistics({ stats, title }) {
 }
 
 Statistics.propTypes = {
-  stats: PropTypes.array,
-  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Statistics;

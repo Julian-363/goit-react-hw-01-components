@@ -12,7 +12,7 @@ function ItemStat({ label, percentage }) {
 
 ItemStat.propTypes = {
   label: PropTypes.string,
-  percentage: PropTypes.string,
+  percentage: PropTypes.number,
 };
 
 export default ItemStat;

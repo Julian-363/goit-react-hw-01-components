@@ -7,8 +7,8 @@ function ContainerProfile({ children, type }) {
 }
 
 ContainerProfile.propTypes = {
-  children: PropTypes.node,
-  type: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  type: PropTypes.oneOf(['container', 'profile', 'friends', 'other']).isRequired,
 };
 
 export default ContainerProfile;
